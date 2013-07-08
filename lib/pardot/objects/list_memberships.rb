@@ -2,8 +2,8 @@ module Pardot
   module Objects
     module ListMemberships
       
-      def list_membership
-        @list_membership ||= ListMemberships.new self
+      def list_memberships
+        @list_memberships ||= ListMemberships.new self
       end
       
       class ListMemberships
