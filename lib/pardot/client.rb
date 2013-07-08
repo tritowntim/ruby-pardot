@@ -10,6 +10,7 @@ module Pardot
     include Http
 
     include Objects::Lists
+    include Objects::ListMemberships
     include Objects::Opportunities
     include Objects::Prospects
     include Objects::Users
