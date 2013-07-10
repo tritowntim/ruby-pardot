@@ -18,21 +18,12 @@ module Pardot
           result
         end
         
-        def read id, params = {}
-          post "/do/read/id/#{id}", params
-        end
-        
         protected
         
         def get path, params = {}, result = "listMembership"
           response = @client.get "listMembership", path, params
           result ? response[result] : response
-        end
-        
-        def post path, params = {}, result = "listMembership"
-          response = @client.post "listMembership", path, params
-          result ? response[result] : response
-        end
+        end 
         
       end
       
